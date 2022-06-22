@@ -1,6 +1,6 @@
-import 'package:bloc_auth/bloc/bloc/auth_bloc.dart';
-import 'package:bloc_auth/presentation/Dashboard/dashboard.dart';
-import 'package:bloc_auth/presentation/SignIn/sign_in.dart';
+import 'package:bloc_auth/pages/auth/SignIn/sign_in.dart';
+import 'package:bloc_auth/pages/auth/bloc/auth_bloc.dart';
+import 'package:bloc_auth/pages/home/dashboard.dart';
 import 'package:email_validator/email_validator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

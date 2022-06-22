@@ -1,5 +1,5 @@
-import 'package:bloc_auth/bloc/bloc/auth_bloc.dart';
-import 'package:bloc_auth/presentation/SignIn/sign_in.dart';
+import 'package:bloc_auth/pages/auth/SignIn/sign_in.dart';
+import 'package:bloc_auth/pages/auth/bloc/auth_bloc.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -20,7 +20,7 @@ class Dashboard extends StatelessWidget {
           if (state is UnAuthenticated) {
             // Navigate to the sign in screen when the user Signs Out
             Navigator.of(context).pushAndRemoveUntil(
-              MaterialPageRoute(builder: (context) => SignIn()),
+              MaterialPageRoute(builder: (context) => const SignIn()),
               (route) => false,
             );
           }

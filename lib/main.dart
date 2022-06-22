@@ -1,7 +1,7 @@
-import 'package:bloc_auth/bloc/bloc/auth_bloc.dart';
 import 'package:bloc_auth/data/repositories/auth_repository.dart';
-import 'package:bloc_auth/presentation/Dashboard/dashboard.dart';
-import 'package:bloc_auth/presentation/SignIn/sign_in.dart';
+import 'package:bloc_auth/pages/auth/SignIn/sign_in.dart';
+import 'package:bloc_auth/pages/auth/bloc/auth_bloc.dart';
+import 'package:bloc_auth/pages/home/dashboard.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
                   return const Dashboard();
                 }
                 // Otherwise, they're not signed in. Show the sign in page.
-                return SignIn();
+                return const SignIn();
               }),
         ),
       ),
