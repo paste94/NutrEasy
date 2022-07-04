@@ -33,9 +33,10 @@ class MyApp extends StatelessWidget {
                 // If the snapshot has user data, then they're already signed in. So Navigating to the Dashboard.
                 if (snapshot.hasData) {
                   return const Dashboard();
+                } else {
+                  // Otherwise, they're not signed in. Show the sign in page.
+                  return const SignIn();
                 }
-                // Otherwise, they're not signed in. Show the sign in page.
-                return const SignIn();
               }),
         ),
       ),
